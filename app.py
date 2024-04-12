@@ -1,3 +1,7 @@
+# [mac] initializing libiomp5.dylib, but found libomp.dylib already initialized 오류로 추가
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
 import gradio as gr
 from logic import *
 from environment import OUTPUT_PATH, DOWNLOAD_PATH, RECORDING_PATH, CACHE_FILE, DEFAULT_MODEL_LANGUAGE, DEFAULT_MODEL, DEFAULT_LANGUAGE
